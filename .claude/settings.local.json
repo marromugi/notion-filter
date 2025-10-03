@@ -1,11 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(pnpm init:*)",
       "Bash(pnpm test:*)",
       "Bash(npm run lint)",
       "Bash(npm run format:check:*)",
-      "Bash(pnpm install:*)",
       "Bash(pnpm build:*)",
       "Bash(pnpm --filter @react-filter-demo/core test --run)",
       "Bash(pnpm --filter @react-filter-demo/core test run)",
@@ -15,6 +13,9 @@
       "Bash(pnpm format:*)"
     ],
     "deny": [],
-    "ask": []
+    "ask": [
+      "Bash(pnpm init:*)",
+      "Bash(pnpm install:*)"
+    ]
   }
 }
